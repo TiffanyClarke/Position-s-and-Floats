@@ -1,0 +1,117 @@
+<html lang="en">
+	<head>
+		<title>Assignment 4: Floating &amp; Positioning</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<style>
+			/* Put CSS related to this activity in THIS style block only */
+			/* DO NOT use the external stylesheet */
+			/* This section for columns activity styles only */ 
+			.clearfix:after {
+				visibility: hidden;
+				display: block;
+				font-size: 0;
+				content: " ";
+				clear: both;
+				height: 0;
+				}
+			* html .clearfix             { zoom: 1; } /* IE6 */
+			*:first-child+html .clearfix { zoom: 1; } /* IE7 */	
+
+			/* start editing CSS here */
+			.wrap {
+				width: 100%
+			}
+			.column-group-1 p {
+				float: left;
+				width: 45%;
+				margin-right: 5%;
+
+			}
+			.column-group-1 p:lastchild {
+				margin: 0;
+			}
+			.column-group-2 p {
+				float: left;
+				width: 25%;
+				margin-right: 5%;
+			}
+			.column-group-2 p:lastchild {
+				margin: 0;
+			}
+			.column-group-3 p {
+				float: left;
+				width: 15%;
+				margin-right: 10%;
+			}
+			.column-group-3 p:lastchild {
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Assignment 4: Floating &amp; Positioning</h1>
+			<nav>	
+				<ul>
+					<li><a href="index.html">&larr; HOME</a></li>
+					<li><a href="positioning.html">Positioning</a></li>
+					<li><a href="floating.html">Floating</a></li>
+					<li><a class="active" href="columns.html">Columns</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="wrap">
+			<section>
+				<h2>Activity 3: Columns</h2>
+				<h3>I've already added a parent div to each column group with a class of "clearfix" (check out the style block on this page). It acts like a regular CSS clear but it affects parent element containing the floats, causing the affected element to act is if they are cleared.</h3>
+				<p>In this activity, you are to achieve the following with as little extraneous code as possible:</p>
+				<ol>;
+					<li>Float two elements of equal width side-by-side using relative units. Add a margin to create a gutter (add space) <strong>between</strong> columns, again using relative units. <em>(This will require some math and you will have to remember the box model!)</em></li>
+					<li>Float three elements of equal width and add gutters, as above.</li>
+					<li>Float four elements of equal width and add gutters, as above.</li>
+					<li>Just so you can see what it does, try removing the .clearfix class from column group 1 and watch what happens! Once you see the effect, replace the .clearfix class so everything is working again!</li>
+				</ol>
+			</section>
+			<hr>
+		
+			<!-- edit html below here only -->
+			<section class="col">
+
+				<div class="column-group-1 clearfix">
+					<h4>Column Group 1: Two Equal Columns + One Gutter</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis nunc et lorem euismod, in fringilla sapien posuere. Pellentesque vel egestas arcu. Nulla eget nisl fringilla leo dignissim pellentesque. Donec a convallis ante, a fringilla erat. Maecenas sit amet ullamcorper metus. Duis orci sem, luctus vel lobortis non, mattis ac lectus. Proin in odio ut elit facilisis sagittis vel ac sem. In fermentum ante eget tempus luctus. Vivamus luctus lacus erat, ut vulputate felis vulputate eget.</p>
+					<p>Phasellus ac mauris gravida, elementum nisi ut, ultricies risus. Maecenas eu diam est. Aenean iaculis tellus vel mattis imperdiet. Phasellus dapibus dignissim ipsum id lacinia. Nam faucibus non nisl sit amet aliquam. Suspendisse vitae odio hendrerit massa lacinia condimentum. Etiam sagittis diam mauris, eget malesuada elit faucibus at. Nam ornare porttitor metus.</p>
+				</div>
+
+				<div class="column-group-2 clearfix">
+					<h4>Column Group 2: Three Equal Columns + Two Gutters</h4>
+					<p>In et nunc et mauris consectetur placerat vitae convallis arcu. Nullam a mi neque. Integer et justo justo. Morbi leo metus, dictum ut porta quis, malesuada vitae ante. Maecenas sapien purus, feugiat eget nibh sed, convallis interdum mauris. Morbi molestie lacinia tincidunt. Sed lobortis luctus tincidunt. Mauris ullamcorper est id nibh congue gravida. Vestibulum sit amet felis sit amet risus tristique finibus.</p>
+					<p>Vestibulum eu auctor urna, sed congue risus. Quisque pulvinar nibh justo. Fusce et lobortis magna. Aenean ut urna a elit facilisis dapibus a vitae ligula. Morbi scelerisque nec arcu euismod fermentum. Curabitur a placerat felis. Donec ante tellus, cursus id convallis a, imperdiet pretium justo. Suspendisse pulvinar gravida urna nec suscipit. Ut tincidunt, sem quis scelerisque ornare, libero neque pharetra urna, non tempus neque sem id nibh. Phasellus consequat, leo et bibendum malesuada, justo ex bibendum urna, in porttitor risus lorem sit amet sem. Vivamus sit amet orci venenatis, ultrices neque at, consectetur velit. Nunc tristique malesuada dolor, elementum auctor nulla tempus quis. Vivamus tempor quam est, sed fringilla quam dictum vitae. Vestibulum orci arcu, elementum ac eros non, dignissim commodo massa.</p>
+					<p>Quisque urna ligula, fringilla sit amet vestibulum porta, egestas eget justo. Pellentesque quis vulputate ex. Donec aliquam ante eget ultrices condimentum. Donec imperdiet, mi elementum ullamcorper tincidunt, nunc velit commodo ligula, vel eleifend ex augue ut lacus. Proin vitae luctus eros. Sed lobortis blandit neque, eget varius magna fermentum sit amet. Aliquam sit amet condimentum diam. Nullam quis tristique diam. Sed tincidunt suscipit felis, eu molestie diam molestie in. Aliquam faucibus odio quam, iaculis efficitur sapien aliquam ac. Suspendisse faucibus odio eu pellentesque volutpat. Fusce aliquet tempus commodo. Phasellus rhoncus egestas turpis, non rutrum dolor gravida nec.</p>
+				</div>
+
+				<div class="column-group-3 clearfix">
+					<h4>Column Group 3: Four Equal Columns + Three Gutters</h4>
+					<p>Phasellus ac mauris gravida, elementum nisi ut, ultricies risus. Maecenas eu diam est. Aenean iaculis tellus vel mattis imperdiet. Phasellus dapibus dignissim ipsum id lacinia. Nam faucibus non nisl sit amet aliquam. Suspendisse vitae odio hendrerit massa lacinia condimentum. Etiam sagittis diam mauris, eget malesuada elit faucibus at. Nam ornare porttitor metus.</p>
+					<p>In et nunc et mauris consectetur placerat vitae convallis arcu. Nullam a mi neque. Integer et justo justo. Morbi leo metus, dictum ut porta quis, malesuada vitae ante. Maecenas sapien purus, feugiat eget nibh sed, convallis interdum mauris. Morbi molestie lacinia tincidunt. Sed lobortis luctus tincidunt. Mauris ullamcorper est id nibh congue gravida. Vestibulum sit amet felis sit amet risus tristique finibus.</p>
+					<p>Vestibulum eu auctor urna, sed congue risus. Quisque pulvinar nibh justo. Fusce et lobortis magna. Aenean ut urna a elit facilisis dapibus a vitae ligula. Morbi scelerisque nec arcu euismod fermentum. Curabitur a placerat felis. Donec ante tellus, cursus id convallis a, imperdiet pretium justo. Suspendisse pulvinar gravida urna nec suscipit. Ut tincidunt, sem quis scelerisque ornare, libero neque pharetra urna, non tempus neque sem id nibh. Phasellus consequat, leo et bibendum malesuada, justo ex bibendum urna, in porttitor risus lorem sit amet sem. Vivamus sit amet orci venenatis, ultrices neque at, consectetur velit. Nunc tristique malesuada dolor, elementum auctor nulla tempus quis. Vivamus tempor quam est, sed fringilla quam dictum vitae. Vestibulum orci arcu, elementum ac eros non, dignissim commodo massa.</p>
+					<p>Quisque urna ligula, fringilla sit amet vestibulum porta, egestas eget justo. Pellentesque quis vulputate ex. Donec aliquam ante eget ultrices condimentum. Donec imperdiet, mi elementum ullamcorper tincidunt, nunc velit commodo ligula, vel eleifend ex augue ut lacus. Proin vitae luctus eros. Sed lobortis blandit neque, eget varius magna fermentum sit amet. Aliquam sit amet condimentum diam. Nullam quis tristique diam. Sed tincidunt suscipit felis, eu molestie diam molestie in. Aliquam faucibus odio quam, iaculis efficitur sapien aliquam ac. Suspendisse faucibus odio eu pellentesque volutpat. Fusce aliquet tempus commodo. Phasellus rhoncus egestas turpis, non rutrum dolor gravida nec.</p>
+				</div>
+				<!-- edit html above here only -->
+				
+				<div class="filler-text">
+					<h4>The following lorem ipsum is just presentational to assist in my marking, so no columns or CSS are required here. Please just leave everything in this section alone.</h4>
+					<p>In et nunc et mauris consectetur placerat vitae convallis arcu. Nullam a mi neque. Integer et justo justo. Morbi leo metus, dictum ut porta quis, malesuada vitae ante. Maecenas sapien purus, feugiat eget nibh sed, convallis interdum mauris. Morbi molestie lacinia tincidunt. Sed lobortis luctus tincidunt. Mauris ullamcorper est id nibh congue gravida. Vestibulum sit amet felis sit amet risus tristique finibus.</p>
+					<p>Vestibulum eu auctor urna, sed congue risus. Quisque pulvinar nibh justo. Fusce et lobortis magna. Aenean ut urna a elit facilisis dapibus a vitae ligula. Morbi scelerisque nec arcu euismod fermentum. Curabitur a placerat felis. Donec ante tellus, cursus id convallis a, imperdiet pretium justo. Suspendisse pulvinar gravida urna nec suscipit. Ut tincidunt, sem quis scelerisque ornare, libero neque pharetra urna, non tempus neque sem id nibh. Phasellus consequat, leo et bibendum malesuada, justo ex bibendum urna, in porttitor risus lorem sit amet sem. Vivamus sit amet orci venenatis, ultrices neque at, consectetur velit. Nunc tristique malesuada dolor, elementum auctor nulla tempus quis. Vivamus tempor quam est, sed fringilla quam dictum vitae. Vestibulum orci arcu, elementum ac eros non, dignissim commodo massa.</p>
+				</div>
+			</section>
+
+			<hr>
+			<section>
+				<p><strong>Way to go! You have won the internet!</strong></p>
+			</section>
+		</div>
+	</body>
+</html>

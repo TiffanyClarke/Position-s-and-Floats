@@ -1,0 +1,70 @@
+<html lang="en">
+	<head>
+		<title>Assignment 4: Floating &amp; Positioning</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<style>
+			/* Put CSS related to this activity in THIS style block only */
+			/* DO NOT use the external stylesheet */
+			/* This section for floating activity styles only */ 
+			.flo div{
+				float: left;
+				width: 50%;
+			}
+
+			.flo div:last-child {
+				clear: both;
+				width: 100%;
+			}
+
+			hr {
+				clear: both;
+			}
+
+				
+		</style>
+			}
+	</head>
+	<body>
+		<header>
+			<h1>Assignment 4: Floating &amp; Positioning</h1>
+			<nav>	
+				<ul>
+					<li><a href="index.html">&larr; HOME</a></li>
+					<li><a href="positioning.html">Positioning</a></li>
+					<li><a class="active" href="floating.html">Floating</a></li>
+					<li><a href="columns.html">Columns</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="wrap">
+			<section>
+				<h2>Activity 2: Floating</h2>
+				<h3>The float CSS property specifies that an element should be placed along the left or right side of its container, allowing text and inline elements to wrap around it. The element is removed from the normal flow of the web page, though still remaining a part of the flow (in contrast to absolute positioning).</h3>
+				<p>In this activity, you are to achieve the following with as little extraneous code as possible:</p>
+				<ul>
+					<li>Float the first paragraph to either the left or right so that it is visibily sitting beside the second paragraph (as if you were wrapping text around an image)</li>
+					<li>After completing the first part of this activity, fix the third paragraph so that it is no longer wrapping and it sites entirely below the first two paragraphs.</li>
+				</ul>
+			</section>
+			<hr>
+		
+			<!-- edit html below here only -->
+			<section class="flo">
+				<div>
+					<p><strong>Paragraph One.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis nunc et lorem euismod, in fringilla sapien posuere. Pellentesque vel egestas arcu. Nulla eget nisl fringilla leo dignissim pellentesque. Donec a convallis ante, a fringilla erat. Maecenas sit amet ullamcorper metus. Duis orci sem, luctus vel lobortis non, mattis ac lectus. Proin in odio ut elit facilisis sagittis vel ac sem. In fermentum ante eget tempus luctus. Vivamus luctus lacus erat, ut vulputate felis vulputate eget.</p></div>
+				<div>
+					<p><strong>Paragraph 2.</strong> In et nunc et mauris consectetur placerat vitae convallis arcu. Nullam a mi neque. Integer et justo justo. Morbi leo metus, dictum ut porta quis, malesuada vitae ante. Maecenas sapien purus, feugiat eget nibh sed, convallis interdum mauris. Morbi molestie lacinia tincidunt. Sed lobortis luctus tincidunt. Mauris ullamcorper est id nibh congue gravida. Vestibulum sit amet felis sit amet risus tristique finibus.</p></div>
+				<div>
+					<p> <strong>Paragraph 3.</strong> Phasellus ac mauris gravida, elementum nisi ut, ultricies risus. Maecenas eu diam est. Aenean iaculis tellus vel mattis imperdiet. Phasellus dapibus dignissim ipsum id lacinia. Nam faucibus non nisl sit amet aliquam. Suspendisse vitae odio hendrerit massa lacinia condimentum. Etiam sagittis diam mauris, eget malesuada elit faucibus at. Nam ornare porttitor metus.</p></div>
+			</section>
+			<!-- edit html above here only -->
+
+			<hr>
+			<section>
+				<p><strong><a href="columns.html">Moving On &rarr;</a></strong></p>
+			</section>
+		</div>
+	</body>
+</html>
